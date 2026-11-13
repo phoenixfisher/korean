@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		BD8571C430A77E6A0011E9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8571AA30A77E690011E9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8571B130A77E690011E9EF;
+			remoteInfo = korean;
+		};
+		BD8571CE30A77E6A0011E9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD8571AA30A77E690011E9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD8571B130A77E690011E9EF;
+			remoteInfo = korean;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD8571B230A77E690011E9EF /* korean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = korean.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8571C330A77E6A0011E9EF /* koreanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koreanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8571CD30A77E6A0011E9EF /* koreanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koreanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BD8571D330A77E6A0011E9EF /* Exceptions for "korean" folder in "korean" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BD8571B130A77E690011E9EF /* korean */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BD8571B430A77E690011E9EF /* korean */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BD8571D330A77E6A0011E9EF /* Exceptions for "korean" folder in "korean" target */,
+			);
+			path = korean;
+			sourceTree = "<group>";
+		};
+		BD8571C630A77E6A0011E9EF /* koreanTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = koreanTests;
+			sourceTree = "<group>";
+		};
+		BD8571D030A77E6A0011E9EF /* koreanUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = koreanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD8571AF30A77E690011E9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BD8571C030A77E6A0011E9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		BD8571CA30A77E6A0011E9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD8571A930A77E690011E9EF = {
+			isa = PBXGroup;
+			children = (
+				BD8571B430A77E690011E9EF /* korean */,
+				BD8571C630A77E6A0011E9EF /* koreanTests */,
+				BD8571D030A77E6A0011E9EF /* koreanUITests */,
+				BD8571B330A77E690011E9EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD8571B330A77E690011E9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD8571B230A77E690011E9EF /* korean.app */,
+				BD8571C330A77E6A0011E9EF /* koreanTests.xctest */,
+				BD8571CD30A77E6A0011E9EF /* koreanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD8571B130A77E690011E9EF /* korean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8571D430A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "korean" */;
+			buildPhases = (
+				BD8571AE30A77E690011E9EF /* Sources */,
+				BD8571AF30A77E690011E9EF /* Frameworks */,
+				BD8571B030A77E690011E9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				BD8571B430A77E690011E9EF /* korean */,
+			);
+			name = korean;
+			productName = korean;
+			productReference = BD8571B230A77E690011E9EF /* korean.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD8571C230A77E6A0011E9EF /* koreanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8571D930A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "koreanTests" */;
+			buildPhases = (
+				BD8571BF30A77E6A0011E9EF /* Sources */,
+				BD8571C030A77E6A0011E9EF /* Frameworks */,
+				BD8571C130A77E6A0011E9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8571C530A77E6A0011E9EF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD8571C630A77E6A0011E9EF /* koreanTests */,
+			);
+			name = koreanTests;
+			productName = koreanTests;
+			productReference = BD8571C330A77E6A0011E9EF /* koreanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD8571CC30A77E6A0011E9EF /* koreanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD8571DC30A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "koreanUITests" */;
+			buildPhases = (
+				BD8571C930A77E6A0011E9EF /* Sources */,
+				BD8571CA30A77E6A0011E9EF /* Frameworks */,
+				BD8571CB30A77E6A0011E9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8571CF30A77E6A0011E9EF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD8571D030A77E6A0011E9EF /* koreanUITests */,
+			);
+			name = koreanUITests;
+			productName = koreanUITests;
+			productReference = BD8571CD30A77E6A0011E9EF /* koreanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD8571AA30A77E690011E9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					BD8571B130A77E690011E9EF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					BD8571C230A77E6A0011E9EF = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = BD8571B130A77E690011E9EF;
+					};
+					BD8571CC30A77E6A0011E9EF = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = BD8571B130A77E690011E9EF;
+					};
+				};
+			};
+			buildConfigurationList = BD8571AD30A77E690011E9EF /* Build configuration list for PBXProject "korean" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD8571A930A77E690011E9EF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BD8571B330A77E690011E9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD8571B130A77E690011E9EF /* korean */,
+				BD8571C230A77E6A0011E9EF /* koreanTests */,
+				BD8571CC30A77E6A0011E9EF /* koreanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD8571B030A77E690011E9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		BD8571C130A77E6A0011E9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		BD8571CB30A77E6A0011E9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD8571AE30A77E690011E9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		BD8571BF30A77E6A0011E9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		BD8571C930A77E6A0011E9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD8571C530A77E6A0011E9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8571B130A77E690011E9EF /* korean */;
+			targetProxy = BD8571C430A77E6A0011E9EF /* PBXContainerItemProxy */;
+		};
+		BD8571CF30A77E6A0011E9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD8571B130A77E690011E9EF /* korean */;
+			targetProxy = BD8571CE30A77E6A0011E9EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD8571D530A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "korean" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = korean/korean.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = korean/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Korean;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.korean;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD8571D630A77E6A0011E9EF /* Release configuration for PBXNativeTarget "korean" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = korean/korean.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = korean/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Korean;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.korean;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD8571D730A77E6A0011E9EF /* Debug configuration for PBXProject "korean" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD8571D830A77E6A0011E9EF /* Release configuration for PBXProject "korean" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD8571DA30A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "koreanTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.koreanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/korean.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/korean";
+			};
+			name = Debug;
+		};
+		BD8571DB30A77E6A0011E9EF /* Release configuration for PBXNativeTarget "koreanTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.koreanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/korean.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/korean";
+			};
+			name = Release;
+		};
+		BD8571DD30A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "koreanUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.koreanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = korean;
+			};
+			name = Debug;
+		};
+		BD8571DE30A77E6A0011E9EF /* Release configuration for PBXNativeTarget "koreanUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X4Z5HF2BAJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sphynx.koreanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = korean;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD8571AD30A77E690011E9EF /* Build configuration list for PBXProject "korean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8571D730A77E6A0011E9EF /* Debug configuration for PBXProject "korean" */,
+				BD8571D830A77E6A0011E9EF /* Release configuration for PBXProject "korean" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BD8571D430A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "korean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8571D530A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "korean" */,
+				BD8571D630A77E6A0011E9EF /* Release configuration for PBXNativeTarget "korean" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BD8571D930A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "koreanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8571DA30A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "koreanTests" */,
+				BD8571DB30A77E6A0011E9EF /* Release configuration for PBXNativeTarget "koreanTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		BD8571DC30A77E6A0011E9EF /* Build configuration list for PBXNativeTarget "koreanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD8571DD30A77E6A0011E9EF /* Debug configuration for PBXNativeTarget "koreanUITests" */,
+				BD8571DE30A77E6A0011E9EF /* Release configuration for PBXNativeTarget "koreanUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD8571AA30A77E690011E9EF /* Project object */;
+	validationLevel = 1;
+}
