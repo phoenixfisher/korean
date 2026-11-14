@@ -39,7 +39,9 @@ struct SearchView: View {
                                 .opacity(0.8)
                         }
                         
-                        Text("Beta 1.0").italic()
+                        Text("Beta 1.0")
+                            .font(.caption)
+                            .italic()
                     }
                 } else if isSearching {
                     ProgressView("Searching…")
@@ -54,21 +56,25 @@ struct SearchView: View {
                 } else {
                     // Dictionary result list
                     List(results) { entry in
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(entry.lemma)
-                                .font(.headline)
+                        NavigationLink {
+                            DictionaryEntryView(word: entry)
+                        } label: {
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text(entry.lemma)
+                                    .font(.headline)
 
-                            if let englishLemma = entry.englishLemma, !englishLemma.isEmpty {
-                                Text(englishLemma)
-                                    .font(.subheadline)
-                                    .fontWeight(.medium)
-                            } else {
-                                Text(entry.englishDefinition)
-                                    .font(.body)
-                                    .foregroundStyle(.secondary)
+                                if let englishLemma = entry.englishLemma, !englishLemma.isEmpty {
+                                    Text(englishLemma)
+                                        .font(.subheadline)
+                                        .fontWeight(.medium)
+                                } else {
+                                    Text(entry.englishDefinition)
+                                        .font(.body)
+                                        .foregroundStyle(.secondary)
+                                }
                             }
+                            .padding(.vertical, 4)
                         }
-                        .padding(.vertical, 4)
                     }
                     .listStyle(.plain)
                 }
@@ -97,7 +103,7 @@ struct SearchView: View {
         errorMessage = nil
 
         do {
-            try await Task.sleep(for: .milliseconds(250))
+            try await Task.sleep(for: .milliseconds(500))
             let newResults = try await dictionary.search(for: query)
             try Task.checkCancellation()
             results = newResults
