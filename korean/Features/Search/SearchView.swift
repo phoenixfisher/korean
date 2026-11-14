@@ -25,6 +25,7 @@ struct SearchView: View {
                                 .font(.caption2)
                                 .frame(alignment: .leading)
                                 .offset(x: -36, y: 6)
+                                .opacity(0.8)
                             
                             Text("Korean")
                                 .font(.title)
@@ -35,6 +36,7 @@ struct SearchView: View {
                                 .font(.caption2)
                                 .frame(alignment: .trailing)
                                 .offset(x: 36, y: -6)
+                                .opacity(0.8)
                         }
                         
                         Text("Beta 1.0").italic()
