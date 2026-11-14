@@ -19,11 +19,26 @@ struct SearchView: View {
         NavigationStack {
             Group {
                 if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    ContentUnavailableView(
-                        "Search the Dictionary",
-                        systemImage: "character.book.closed",
-                        description: Text("Enter a Korean word to see its English definitions.")
-                    )
+                    VStack(spacing: 26) {
+                        VStack(spacing: 0) {
+                            Text("The")
+                                .font(.caption2)
+                                .frame(alignment: .leading)
+                                .offset(x: -36, y: 6)
+                            
+                            Text("Korean")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundStyle(Color.accent)
+                            
+                            Text("App")
+                                .font(.caption2)
+                                .frame(alignment: .trailing)
+                                .offset(x: 36, y: -6)
+                        }
+                        
+                        Text("Beta 1.0").italic()
+                    }
                 } else if isSearching {
                     ProgressView("Searching…")
                 } else if let errorMessage {
@@ -35,16 +50,31 @@ struct SearchView: View {
                 } else if results.isEmpty {
                     ContentUnavailableView.search(text: searchText)
                 } else {
+                    // Dictionary result list
                     List(results) { entry in
-                        DictionaryResultRow(entry: entry)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(entry.lemma)
+                                .font(.headline)
+
+                            if let englishLemma = entry.englishLemma, !englishLemma.isEmpty {
+                                Text(englishLemma)
+                                    .font(.subheadline)
+                                    .fontWeight(.medium)
+                            } else {
+                                Text(entry.englishDefinition)
+                                    .font(.body)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        .padding(.vertical, 4)
                     }
+                    .listStyle(.plain)
                 }
             }
-            .navigationTitle("Korean Dictionary")
             .searchable(
                 text: $searchText,
-                placement: .navigationBarDrawer(displayMode: .always),
-                prompt: "Korean word"
+                placement: .toolbarPrincipal,
+                prompt: "Search any word in Korean or English"
             )
             .task(id: searchText) {
                 await search()
@@ -77,27 +107,5 @@ struct SearchView: View {
             errorMessage = error.localizedDescription
             isSearching = false
         }
-    }
-}
-
-private struct DictionaryResultRow: View {
-    let entry: DictionaryEntry
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(entry.lemma)
-                .font(.headline)
-
-            if let englishLemma = entry.englishLemma, !englishLemma.isEmpty {
-                Text(englishLemma)
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-            }
-
-            Text(entry.englishDefinition)
-                .font(.body)
-                .foregroundStyle(.secondary)
-        }
-        .padding(.vertical, 4)
     }
 }
