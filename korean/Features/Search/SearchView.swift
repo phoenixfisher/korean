@@ -19,28 +19,35 @@ struct SearchView: View {
         NavigationStack {
             Group {
                 if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    ZStack {
-                        Text("Beta")
-                            .font(.system(size: 90, weight: .bold))
-                            .opacity(0.05)
-                            .italic()
-                        
-                        VStack(spacing: -6) {
-                            Text("The")
-                                .font(.caption2)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+//                    VStack(spacing: 20) {
+                        ZStack {
+                            Text("Beta")
+                                .font(.system(size: 90, weight: .bold))
+                                .opacity(0.05)
+                                .italic()
                             
-                            Text("Korean")
-                                .font(.title)
-                            
-                            Text("App")
-                                .font(.caption2)
-                                .frame(maxWidth: .infinity, alignment: .trailing)
+                            VStack(spacing: -6) {
+                                Text("The")
+                                    .font(.caption2)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                Text("Korean")
+                                    .font(.title)
+                                
+                                Text("App")
+                                    .font(.caption2)
+                                    .frame(maxWidth: .infinity, alignment: .trailing)
+                            }
+                            .fontWeight(.bold)
+                            .foregroundStyle(Color.accent)
+                            .fixedSize(horizontal: true, vertical: false)
                         }
-                        .fontWeight(.bold)
-                        .foregroundStyle(Color.accent)
-                        .fixedSize(horizontal: true, vertical: false)
-                    }
+                         
+                        // Old version indicator
+//                        Text("Beta 1.0")
+//                            .font(.caption)
+//                            .italic()
+//                    }
                 } else if isSearching {
                     ProgressView("Searching…")
                 } else if let errorMessage {
