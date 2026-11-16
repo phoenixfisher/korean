@@ -19,29 +19,27 @@ struct SearchView: View {
         NavigationStack {
             Group {
                 if searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                    VStack(spacing: 26) {
-                        VStack(spacing: 0) {
+                    ZStack {
+                        Text("Beta")
+                            .font(.system(size: 90, weight: .bold))
+                            .opacity(0.05)
+                            .italic()
+                        
+                        VStack(spacing: -6) {
                             Text("The")
                                 .font(.caption2)
-                                .frame(alignment: .leading)
-                                .offset(x: -36, y: 6)
-                                .opacity(0.8)
+                                .frame(maxWidth: .infinity, alignment: .leading)
                             
                             Text("Korean")
                                 .font(.title)
-                                .fontWeight(.bold)
-                                .foregroundStyle(Color.accent)
                             
                             Text("App")
                                 .font(.caption2)
-                                .frame(alignment: .trailing)
-                                .offset(x: 36, y: -6)
-                                .opacity(0.8)
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
-                        
-                        Text("Beta 1.0")
-                            .font(.caption)
-                            .italic()
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color.accent)
+                        .fixedSize(horizontal: true, vertical: false)
                     }
                 } else if isSearching {
                     ProgressView("Searching…")
