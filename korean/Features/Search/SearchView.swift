@@ -88,7 +88,7 @@ struct SearchView: View {
             }
             .frame(maxHeight: .infinity)
             .safeAreaInset(edge: .top, spacing: 0) {
-                GlassSearchBar(text: $searchText)
+                GlassSearchBar(text: $searchText, placeholder: "Search Korean or English")
                     .padding(.horizontal)
             }
             .task(id: searchText) {

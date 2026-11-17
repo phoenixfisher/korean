@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GlassSearchBar: View {
     @Binding var text: String
+    var placeholder: String = "Search"
+    
     @FocusState private var isFocused: Bool
 
     var body: some View {
@@ -17,7 +19,7 @@ struct GlassSearchBar: View {
                 Image(systemName: "magnifyingglass")
                     .foregroundStyle(.secondary)
 
-                TextField("Search Korean or English", text: $text)
+                TextField(placeholder, text: $text)
                     .focused($isFocused)
                     .submitLabel(.done)
                     .autocorrectionDisabled()
